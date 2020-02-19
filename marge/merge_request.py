@@ -163,6 +163,7 @@ class MergeRequest(gitlab.Resource):
             '/projects/{0.project_id}/merge_requests/{0.iid}/merge'.format(self),
             dict(
                 should_remove_source_branch=remove_branch,
+                squash=True
             ),
         ))
 
